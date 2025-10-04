@@ -35,7 +35,7 @@ export default function Slidder() {
   }, []);
 
   return (
-    <div className="relative w-full h-135 overflow-hidden shadow-lg ">
+    <div className="relative w-full h-[540px] sm:h-[600px] md:h-[650px] lg:h-[700px] overflow-hidden shadow-lg">
       {slides.map((slide, index) => (
         <div
           key={index}
@@ -51,10 +51,14 @@ export default function Slidder() {
           />
 
           {/* Text overlay layer */}
-          <div className="absolute inset-0 bg-black/40 flex flex-col justify-center items-start text-center text-white px-30 z-20">
-            <p className="mb-5">{slide.desc}</p>
-            <h2 className="text-6xl font-bold mb-8">{slide.title}</h2>
-            <button className="bg-white hover:bg-blue-600 text-black px-7 py-3 rounded">
+          <div className="absolute inset-0 bg-black/40 flex flex-col justify-center items-center md:items-start text-center md:text-left text-white px-4 sm:px-10 lg:px-20 z-20">
+            <p className="mb-3 text-sm sm:text-base md:text-lg lg:text-xl">
+              {slide.desc}
+            </p>
+            <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
+              {slide.title}
+            </h2>
+            <button className="bg-white hover:bg-blue-600 text-black px-5 py-2 sm:px-6 sm:py-3 rounded text-sm sm:text-base">
               {slide.button}
             </button>
           </div>
