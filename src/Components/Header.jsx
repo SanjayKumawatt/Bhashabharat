@@ -23,7 +23,7 @@ function Header() {
       </ul>
 
       {/* Right Menu */}
-      <div className="hidden md:flex gap-5 text-sm lg:text-base">
+      <div className="hidden md:flex gap-5 text-sm lg:text-base list-none">
         <li>Search</li>
         <li>Login</li>
         <li>Cart</li>
@@ -47,7 +47,7 @@ function Header() {
             <li>Shop Instagram</li>
             <li>Blogs</li>
           </ul>
-          <ul className="flex flex-col gap-3 items-center mt-2">
+          <ul className="flex flex-col gap-3 items-center mt-2 ">
             <li>Search</li>
             <li>Login</li>
             <li>Cart</li>
