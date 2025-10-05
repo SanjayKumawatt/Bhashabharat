@@ -10,7 +10,7 @@ import { NavLink } from 'react-router-dom';
 const footerNavItems = [
     { title: "Home", to: "/" },
     { title: "SAREES", to: "/sarees" },
-    { title: "DUPPATA & STOLE", to: "/dupattas" }, // /dupattas रूट का उपयोग करें
+    { title: "DUPPATA & STOLE", to: "/duppata" }, // /dupattas रूट का उपयोग करें
     { title: "SALE", to: "/sale" },
     { title: "Blogs", to: "/blogs" },
 ];
